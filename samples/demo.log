@@ -1,0 +1,40 @@
+2026-10-13 09:41:00.001 [INFO] LogScope demo session started
+2026-10-13 09:41:00.023 [DEBUG] Reading configuration from settings.json
+2026-10-13 09:41:00.056 [INFO] 工作目录已加载：C:/Projects/Workspace
+2026-10-13 09:41:00.081 [INFO] Connecting to service endpoint api.example.local
+2026-10-13 09:41:00.135 [DEBUG] Request id=req-1042 method=GET path=/health
+2026-10-13 09:41:00.203 [INFO] Service connected, latency=68ms
+2026-10-13 09:41:01.007 [TRACE] Heartbeat acknowledged, sequence=1
+2026-10-13 09:41:01.042 [INFO] Task #1001 started: importing customer records
+2026-10-13 09:41:01.096 [WARN] Response time exceeded threshold: 820ms (limit=500ms)
+2026-10-13 09:41:01.132 [DEBUG] Retry policy selected: exponential backoff
+2026-10-13 09:41:01.400 [ERROR] Request timeout: req-1043 exceeded 3000ms deadline
+2026-10-13 09:41:01.422 [WARN] Scheduled retry 1/3 after 1000ms
+2026-10-13 09:41:02.003 [INFO] 已处理 1,000 条记录，当前进度 25%
+2026-10-13 09:41:02.011 [DEBUG] Worker pool active=4 queued=12
+2026-10-13 09:41:02.019 [TRACE] Cache hit key=customer:2048 ttl=300s
+2026-10-13 09:41:02.052 [ERROR] 无法解析记录：第 1048 行缺少必填字段 email
+2026-10-13 09:41:02.120 [INFO] Invalid record skipped; continuing import
+2026-10-13 09:41:02.451 [INFO] Retry succeeded: req-1043 status=200 elapsed=184ms
+2026-10-13 09:41:03.003 [INFO] 已处理 2,000 条记录，当前进度 50%
+2026-10-13 09:41:03.018 [DEBUG] SQLite transaction committed rows=1000 elapsed=12ms
+2026-10-13 09:41:03.104 [WARN] Disk free space below threshold: available=1.2GB
+2026-10-13 09:41:03.225 [TRACE] Background cleanup task started
+2026-10-13 09:41:03.470 [INFO] Cleanup completed: reclaimed 640MB
+2026-10-13 09:41:04.003 [INFO] 已处理 3,000 条记录，当前进度 75%
+2026-10-13 09:41:04.087 [DEBUG] Request id=req-1044 method=POST path=/sync
+2026-10-13 09:41:04.158 [ERROR] Sync failed: HTTP 503 Service Unavailable
+2026-10-13 09:41:04.176 [WARN] Switching to offline queue; pending=24
+2026-10-13 09:41:04.231 [INFO] Offline queue saved successfully
+2026-10-13 09:41:05.003 [INFO] 已处理 4,000 条记录，当前进度 100%
+2026-10-13 09:41:05.114 [INFO] Import completed: success=3999 skipped=1 elapsed=4.1s
+2026-10-13 09:41:05.207 [DEBUG] Reconnecting sync channel, attempt=2
+2026-10-13 09:41:05.356 [INFO] Sync channel restored; draining offline queue
+2026-10-13 09:41:05.501 [INFO] Uploaded 24 queued operations
+2026-10-13 09:41:06.008 [FATAL] Demo failure: database integrity check failed
+2026-10-13 09:41:06.015 [ERROR] Emergency snapshot written to backup/session-1042.db
+2026-10-13 09:41:06.028 [WARN] Application entered recovery mode
+    at StorageService::verifyIntegrity(storage.cpp:218)
+    at ImportWorker::finish(importworker.cpp:94)
+2026-10-13 09:41:06.421 [INFO] Recovery completed using last known good snapshot
+2026-10-13 09:41:06.482 [INFO] Session finished. Try searching for timeout, filtering ERROR, or adding a bookmark.

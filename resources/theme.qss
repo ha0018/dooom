@@ -1,0 +1,56 @@
+QWidget { background: #101722; color: #d9e2ed; font-size: 13px; }
+QMainWindow, QMenuBar, QStatusBar { background: #101722; }
+QMenuBar { color: #91a1b6; padding: 3px 12px; }
+QMenuBar::item { padding: 6px 12px; background: transparent; }
+QMenuBar::item:selected, QMenu::item:selected { background: #233447; }
+QMenu { background: #182230; border: 1px solid #2a394e; padding: 5px; }
+QMenu::item { padding: 8px 26px; }
+QStatusBar { border-top: 1px solid #243043; color: #8596ac; padding: 5px 12px; }
+QFrame#sidebar { background: #0b111b; border-right: 1px solid #243043; }
+QFrame#sidebar QLabel, QFrame#sidebar QListWidget { background: transparent; }
+QLabel#brand { font-size: 22px; font-weight: 700; color: #52d5ad; }
+QLabel#pageTitle { font-size: 24px; font-weight: 600; }
+QLabel#mutedLabel { color: #8596ac; }
+QLabel#sectionLabel { color: #72849a; font-size: 12px; }
+QLabel#railFooter { color: #65788f; font-size: 12px; }
+QFrame#workspaceHeader { border-bottom: 1px solid #243043; }
+QPushButton { background: #1b2737; border: 1px solid #2b3b50; border-radius: 6px; padding: 8px 13px; }
+QPushButton:hover { background: #26394e; border-color: #44617d; }
+QPushButton:pressed { background: #13222e; }
+QPushButton#primaryButton { background: #42c7a2; color: #06261e; border: none; font-weight: 600; padding: 12px; }
+QPushButton#primaryButton:hover { background: #62ddbb; }
+QListWidget#recentFiles { border: none; color: #aab9cb; outline: none; }
+QListWidget#recentFiles::item { border-radius: 5px; padding: 5px 10px; }
+QListWidget#recentFiles::item:selected, QListWidget#recentFiles::item:hover { background: #1c2b3d; }
+QLineEdit { background: #0d1420; border: 1px solid #2b3b50; border-radius: 7px; padding: 10px 14px; selection-background-color: #276052; }
+QLineEdit:focus { border-color: #42c7a2; }
+QCheckBox { spacing: 7px; color: #a8b8cb; }
+QCheckBox::indicator { width: 15px; height: 15px; border: 1px solid #44566e; border-radius: 3px; background: #101722; }
+QCheckBox::indicator:checked { background: #42c7a2; border-color: #42c7a2; }
+QToolButton { background: #151e2c; border: 1px solid #29384c; border-radius: 5px; padding: 7px 10px; color: #526176; }
+QToolButton:checked { background: #202d3f; border-color: #3b526c; }
+QToolButton:hover { border-color: #607890; }
+QLabel#summaryLabel { color: #94a7bf; padding: 5px 0; }
+QTableView { background: #101722; alternate-background-color: #141e2b; border: 1px solid #26364b; border-radius: 5px; selection-background-color: #23443f; selection-color: #e1f8ef; outline: none; }
+QTableView::item { padding: 0 8px; }
+QTableView::item:selected { background: #23443f; color: #e1f8ef; }
+QHeaderView::section { background: #1a2636; color: #93a8c2; border: none; border-bottom: 1px solid #2b3b50; padding: 10px 8px; font-weight: 600; }
+QTableCornerButton::section { background: #1a2636; border: none; }
+QPlainTextEdit { background: #0c1320; color: #aebfd2; border: 1px solid #26364b; border-radius: 5px; padding: 8px; selection-background-color: #276052; }
+QTabWidget::pane { border: none; }
+QTabBar { background: #0d1420; }
+QTabBar::tab { background: #0d1420; color: #8296af; padding: 13px 22px; border-bottom: 2px solid transparent; }
+QTabBar::tab:selected { background: #172233; color: #d9e2ed; border-bottom-color: #42c7a2; }
+QTabBar::tab:hover { background: #1c2c3f; }
+QProgressBar { background: #253449; border: none; border-radius: 3px; height: 6px; max-height: 6px; }
+QProgressBar::chunk { background: #42c7a2; border-radius: 3px; }
+QSplitter::handle { background: #26364b; height: 2px; }
+QScrollBar:vertical { background: #101722; width: 10px; margin: 0; }
+QScrollBar::handle:vertical { background: #33465e; border-radius: 4px; min-height: 24px; }
+QScrollBar:horizontal { background: #101722; height: 10px; margin: 0; }
+QScrollBar::handle:horizontal { background: #33465e; border-radius: 4px; min-width: 24px; }
+QScrollBar::add-line, QScrollBar::sub-line { width: 0; height: 0; }
+QScrollBar::add-page, QScrollBar::sub-page { background: none; }
+QLabel#emptyIcon { font-size: 88px; color: #42c7a2; }
+QLabel#emptyTitle { font-size: 26px; font-weight: 600; padding: 15px; }
+QToolTip { background: #243449; color: #d9e2ed; border: 1px solid #3c5675; padding: 5px; }

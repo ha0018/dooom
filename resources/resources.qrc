@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/">
+    <file>theme.qss</file>
+    <file alias="demo.log">../samples/demo.log</file>
+    <file>icons/logscope.svg</file>
+  </qresource>
+</RCC>

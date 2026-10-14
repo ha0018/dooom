@@ -1,0 +1,7 @@
+/build/
+/dist/
+/benchmark-data/
+/.codegraph/
+/.vs/
+*.user
+*.logscope.tmp
